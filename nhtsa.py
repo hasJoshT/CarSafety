@@ -2,7 +2,10 @@ from urllib2 import urlopen
 from json import load
 
 apiUrl = "http://www.nhtsa.gov/webapi/api/SafetyRatings"
+
+#Here is the part you adjust to get different output
 apiParam = "/vehicleid/5782"
+
 outputFormat = "?format=json"
 
 response = urlopen(apiUrl + apiParam + outputFormat)
